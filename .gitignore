@@ -5,3 +5,4 @@ __pycache__/
 web/node_modules/
 web/dist/
 *.log
+SUBMISSION_FORM.md
