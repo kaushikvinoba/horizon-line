@@ -1,0 +1,69 @@
+{
+ "sites": [
+  {
+   "site_id": "nobile_rim_1",
+   "mast": 2.0,
+   "a": 8760,
+   "b": 17520,
+   "k": 9760,
+   "sun_pct": 78.60730593607306,
+   "earth_pct": 67.11187214611873,
+   "longest_dark": 376,
+   "sun_az_k": 79.28834541562043,
+   "sun_el_k": 0.861027095431707,
+   "has_window": true
+  },
+  {
+   "site_id": "malapert_massif",
+   "mast": 0.0,
+   "a": 8760,
+   "b": 17520,
+   "k": 9760,
+   "sun_pct": 66.01598173515981,
+   "earth_pct": 52.02054794520548,
+   "longest_dark": 653,
+   "sun_az_k": 114.03805653039869,
+   "sun_el_k": -1.6487337719062671,
+   "has_window": true
+  },
+  {
+   "site_id": "de_gerlache_rim_2",
+   "mast": 5.0,
+   "a": 8760,
+   "b": 17520,
+   "k": 9760,
+   "sun_pct": 46.735159817351594,
+   "earth_pct": 50.502283105022826,
+   "longest_dark": 463,
+   "sun_az_k": 178.2525272860814,
+   "sun_el_k": -1.6424441706513275,
+   "has_window": true
+  },
+  {
+   "site_id": "slater_plain",
+   "mast": 10.0,
+   "a": 8760,
+   "b": 17520,
+   "k": 9760,
+   "sun_pct": 69.55479452054794,
+   "earth_pct": 44.577625570776256,
+   "longest_dark": 381,
+   "sun_az_k": 21.438218692289976,
+   "sun_el_k": 2.059721997306727,
+   "has_window": true
+  },
+  {
+   "site_id": "peak_near_cabeus_b",
+   "mast": 1.0,
+   "a": 8760,
+   "b": 17520,
+   "k": 9760,
+   "sun_pct": 58.789954337899545,
+   "earth_pct": 62.88812785388128,
+   "longest_dark": 352,
+   "sun_az_k": 173.76272357944623,
+   "sun_el_k": -8.545306712717412,
+   "has_window": true
+  }
+ ]
+}
