@@ -213,3 +213,16 @@ dd.em { color: var(--text); font-weight: 600; }
 .coord-form { display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-end; margin: 8px 0; }
 .coord-form label { display: flex; flex-direction: column; gap: 3px; font-size: 0.75rem; color: var(--muted); }
 .coord-form input { background: var(--bg2); border: 1px solid var(--line2); border-radius: 7px; padding: 6px 8px; width: 140px; }
+/* let grid children shrink below their content width (calendar scrolls inside its own box) */
+.explore > *, .duel > *, .finder > *, .classroom > *, .class-grid > *, .map-wrap > *, .duel-rings > *, .methods > * { min-width: 0; }
+.duel-t { display: block; overflow-x: auto; }
+@media (max-width: 600px) {
+  .app { padding: 0 12px 24px; }
+  .controls { width: 100%; }
+  .controls label:first-child { flex: 1 1 100%; }
+  .big { font-size: 1.6rem; }
+}
+.controls label { min-width: 0; }
+.controls select, .duel-ctl select { max-width: 100%; width: 100%; min-width: 0; }
+.controls label:first-child { max-width: 420px; }
+.top > * { min-width: 0; max-width: 100%; }
