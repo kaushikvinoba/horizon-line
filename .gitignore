@@ -1,0 +1,7 @@
+# downloaded NASA source data (large; re-download with pipeline/download_data.sh)
+raw/
+.venv/
+__pycache__/
+web/node_modules/
+web/dist/
+*.log

@@ -1,0 +1,52 @@
+{
+  "start_utc": "2026-01-01T00:00:00Z",
+  "step_hours": 1,
+  "count": 43824,
+  "layout": [
+    "sun_x",
+    "sun_y",
+    "sun_z",
+    "earth_x",
+    "earth_y",
+    "earth_z"
+  ],
+  "units": "km",
+  "frame": "MOON_ME (DE440 orientation in DE421 ME axes)",
+  "origin": "Moon centre",
+  "aberration": "LT+S",
+  "kernels": [
+    "naif0012.tls",
+    "de440s.bsp",
+    "pck00011.tpc",
+    "moon_pa_de440_200625.bpc",
+    "moon_de440_250416.tf"
+  ],
+  "source": "NASA/JPL NAIF SPICE (https://naif.jpl.nasa.gov/naif/)",
+  "generated_with": "pipeline/ephemeris.py (SpiceyPy)",
+  "dsn": {
+    "file": "dsn.bin",
+    "dtype": "int8 deg, N x 3, Moon elevation at station",
+    "stations": [
+      {
+        "complex": "Goldstone",
+        "antenna": "DSS-14",
+        "lon_deg": -116.89,
+        "lat_deg": 35.426
+      },
+      {
+        "complex": "Madrid",
+        "antenna": "DSS-63",
+        "lon_deg": -4.248,
+        "lat_deg": 40.431
+      },
+      {
+        "complex": "Canberra",
+        "antenna": "DSS-43",
+        "lon_deg": 148.981,
+        "lat_deg": -35.401
+      }
+    ],
+    "mask_deg": 10,
+    "frame": "IAU_EARTH (pck00011)"
+  }
+}
