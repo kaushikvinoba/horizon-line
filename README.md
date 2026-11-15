@@ -2,6 +2,8 @@
 
 **Team Horvan · NASA Space Apps Challenge 2026 · Challenge: Lunar Landing Site Navigator**
 
+Team: Kaushik Vinoba (Team Lead) · Ram Naren · S. Vijeta · Samuel M · Rishika M N
+
 **Live app:** https://kaushikvinoba.github.io/horizon-line/ · **7-slide demo deck:** [docs/Horvan_LunarLandingSiteNavigator.pdf](docs/Horvan_LunarLandingSiteNavigator.pdf)
 
 Pick a lunar south pole site and a date. See when the Sun and Earth clear the **real terrain**, so you know when you have power and when you can call home.
