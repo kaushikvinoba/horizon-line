@@ -1,0 +1,212 @@
+[
+ {
+  "site_id": "peak_near_cabeus_b",
+  "region_name": "Peak near Cabeus B (Artemis III candidate region)",
+  "kind": "candidate",
+  "coordinates": {
+   "lat_deg": -81.4202,
+   "lon_deg": 302.32553,
+   "stereo_x_m": -220260.0,
+   "stereo_y_m": 139380.0,
+   "surface_elev_m": 1231.1
+  },
+  "validation": {
+   "span": "2026-01-01 to 2044-08 (18.6 yr, hourly), SPICE DE440",
+   "definition": "% of hours with any part of the disc above the terrain horizon (mast 0 m)",
+   "ours_sun_pct": 57.74,
+   "pgda69_sun_pct": 58.18,
+   "ours_earth_pct": 67.72,
+   "pgda69_earth_pct": 69.6,
+   "pgda69_note": "Mazarico et al. 2011 / PGDA Product 69, AVGVISIB_75S_120M_201608 (+_EARTH), 120 m/px"
+  }
+ },
+ {
+  "site_id": "haworth",
+  "region_name": "Haworth (Artemis III candidate region)",
+  "kind": "candidate",
+  "coordinates": {
+   "lat_deg": -86.99412,
+   "lon_deg": 335.71208,
+   "stereo_x_m": -37500.0,
+   "stereo_y_m": 83100.0,
+   "surface_elev_m": 1780.9
+  },
+  "validation": {
+   "span": "2026-01-01 to 2044-08 (18.6 yr, hourly), SPICE DE440",
+   "definition": "% of hours with any part of the disc above the terrain horizon (mast 0 m)",
+   "ours_sun_pct": 66.58,
+   "pgda69_sun_pct": 67.7,
+   "ours_earth_pct": 56.06,
+   "pgda69_earth_pct": 57.84,
+   "pgda69_note": "Mazarico et al. 2011 / PGDA Product 69, AVGVISIB_75S_120M_201608 (+_EARTH), 120 m/px"
+  }
+ },
+ {
+  "site_id": "malapert_massif",
+  "region_name": "Malapert Massif (Artemis III candidate region)",
+  "kind": "candidate",
+  "coordinates": {
+   "lat_deg": -85.99617,
+   "lon_deg": 2.06662,
+   "stereo_x_m": 4380.0,
+   "stereo_y_m": 121380.0,
+   "surface_elev_m": 5162.5
+  },
+  "validation": {
+   "span": "2026-01-01 to 2044-08 (18.6 yr, hourly), SPICE DE440",
+   "definition": "% of hours with any part of the disc above the terrain horizon (mast 0 m)",
+   "ours_sun_pct": 64.3,
+   "pgda69_sun_pct": 70.33,
+   "ours_earth_pct": 58.05,
+   "pgda69_earth_pct": 57.69,
+   "pgda69_note": "Mazarico et al. 2011 / PGDA Product 69, AVGVISIB_75S_120M_201608 (+_EARTH), 120 m/px"
+  }
+ },
+ {
+  "site_id": "mons_mouton_plateau",
+  "region_name": "Mons Mouton Plateau (Artemis III candidate region)",
+  "kind": "candidate",
+  "coordinates": {
+   "lat_deg": -84.65431,
+   "lon_deg": 25.85422,
+   "stereo_x_m": 70740.0,
+   "stereo_y_m": 145980.0,
+   "surface_elev_m": 5483.5
+  },
+  "validation": {
+   "span": "2026-01-01 to 2044-08 (18.6 yr, hourly), SPICE DE440",
+   "definition": "% of hours with any part of the disc above the terrain horizon (mast 0 m)",
+   "ours_sun_pct": 56.87,
+   "pgda69_sun_pct": 57.26,
+   "ours_earth_pct": 100.0,
+   "pgda69_earth_pct": 100.0,
+   "pgda69_note": "Mazarico et al. 2011 / PGDA Product 69, AVGVISIB_75S_120M_201608 (+_EARTH), 120 m/px"
+  }
+ },
+ {
+  "site_id": "nobile_rim_1",
+  "region_name": "Nobile Rim 1 (Artemis III candidate region)",
+  "kind": "candidate",
+  "coordinates": {
+   "lat_deg": -85.2938,
+   "lon_deg": 36.9036,
+   "stereo_x_m": 85740.0,
+   "stereo_y_m": 114180.0,
+   "surface_elev_m": 6768.1
+  },
+  "validation": {
+   "span": "2026-01-01 to 2044-08 (18.6 yr, hourly), SPICE DE440",
+   "definition": "% of hours with any part of the disc above the terrain horizon (mast 0 m)",
+   "ours_sun_pct": 74.19,
+   "pgda69_sun_pct": 76.82,
+   "ours_earth_pct": 74.67,
+   "pgda69_earth_pct": 75.23,
+   "pgda69_note": "Mazarico et al. 2011 / PGDA Product 69, AVGVISIB_75S_120M_201608 (+_EARTH), 120 m/px"
+  }
+ },
+ {
+  "site_id": "mons_mouton",
+  "region_name": "Mons Mouton (Artemis III candidate region)",
+  "kind": "candidate",
+  "coordinates": {
+   "lat_deg": -85.48429,
+   "lon_deg": 29.51768,
+   "stereo_x_m": 67500.0,
+   "stereo_y_m": 119220.0,
+   "surface_elev_m": 6176.4
+  },
+  "validation": {
+   "span": "2026-01-01 to 2044-08 (18.6 yr, hourly), SPICE DE440",
+   "definition": "% of hours with any part of the disc above the terrain horizon (mast 0 m)",
+   "ours_sun_pct": 77.21,
+   "pgda69_sun_pct": 78.38,
+   "ours_earth_pct": 70.78,
+   "pgda69_earth_pct": 67.81,
+   "pgda69_note": "Mazarico et al. 2011 / PGDA Product 69, AVGVISIB_75S_120M_201608 (+_EARTH), 120 m/px"
+  }
+ },
+ {
+  "site_id": "nobile_rim_2",
+  "region_name": "Nobile Rim 2 (Artemis III candidate region)",
+  "kind": "candidate",
+  "coordinates": {
+   "lat_deg": -84.06343,
+   "lon_deg": 59.25875,
+   "stereo_x_m": 154860.0,
+   "stereo_y_m": 92100.0,
+   "surface_elev_m": 1465.2
+  },
+  "validation": {
+   "span": "2026-01-01 to 2044-08 (18.6 yr, hourly), SPICE DE440",
+   "definition": "% of hours with any part of the disc above the terrain horizon (mast 0 m)",
+   "ours_sun_pct": 53.73,
+   "pgda69_sun_pct": 53.23,
+   "ours_earth_pct": 71.86,
+   "pgda69_earth_pct": 68.26,
+   "pgda69_note": "Mazarico et al. 2011 / PGDA Product 69, AVGVISIB_75S_120M_201608 (+_EARTH), 120 m/px"
+  }
+ },
+ {
+  "site_id": "de_gerlache_rim_2",
+  "region_name": "de Gerlache Rim 2 (Artemis III candidate region)",
+  "kind": "candidate",
+  "coordinates": {
+   "lat_deg": -88.37235,
+   "lon_deg": 297.90451,
+   "stereo_x_m": -43620.0,
+   "stereo_y_m": 23100.0,
+   "surface_elev_m": 678.6
+  },
+  "validation": {
+   "span": "2026-01-01 to 2044-08 (18.6 yr, hourly), SPICE DE440",
+   "definition": "% of hours with any part of the disc above the terrain horizon (mast 0 m)",
+   "ours_sun_pct": 46.55,
+   "pgda69_sun_pct": 46.07,
+   "ours_earth_pct": 58.32,
+   "pgda69_earth_pct": 58.41,
+   "pgda69_note": "Mazarico et al. 2011 / PGDA Product 69, AVGVISIB_75S_120M_201608 (+_EARTH), 120 m/px"
+  }
+ },
+ {
+  "site_id": "slater_plain",
+  "region_name": "Slater Plain (Artemis III candidate region)",
+  "kind": "candidate",
+  "coordinates": {
+   "lat_deg": -87.77062,
+   "lon_deg": 94.73408,
+   "stereo_x_m": 67380.0,
+   "stereo_y_m": -5580.0,
+   "surface_elev_m": 577.1
+  },
+  "validation": {
+   "span": "2026-01-01 to 2044-08 (18.6 yr, hourly), SPICE DE440",
+   "definition": "% of hours with any part of the disc above the terrain horizon (mast 0 m)",
+   "ours_sun_pct": 66.61,
+   "pgda69_sun_pct": 68.17,
+   "ours_earth_pct": 51.26,
+   "pgda69_earth_pct": 51.34,
+   "pgda69_note": "Mazarico et al. 2011 / PGDA Product 69, AVGVISIB_75S_120M_201608 (+_EARTH), 120 m/px"
+  }
+ },
+ {
+  "site_id": "ref_peak_near_shackleton",
+  "region_name": "Reference point: ridge near Shackleton (Mahanti 2024)",
+  "kind": "reference",
+  "coordinates": {
+   "lat_deg": -88.79,
+   "lon_deg": 124.5,
+   "stereo_x_m": 30239.3,
+   "stereo_y_m": -20782.9,
+   "surface_elev_m": 1601.9
+  },
+  "validation": {
+   "span": "2026-01-01 to 2044-08 (18.6 yr, hourly), SPICE DE440",
+   "definition": "% of hours with any part of the disc above the terrain horizon (mast 0 m)",
+   "ours_sun_pct": 49.29,
+   "pgda69_sun_pct": 45.92,
+   "ours_earth_pct": 23.4,
+   "pgda69_earth_pct": 23.0,
+   "pgda69_note": "Mazarico et al. 2011 / PGDA Product 69, AVGVISIB_75S_120M_201608 (+_EARTH), 120 m/px"
+  }
+ }
+]

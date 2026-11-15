@@ -1,0 +1,11 @@
+{
+ "source": "NASA LRO LOLA LDEM_80S_80M (PDS), 3x3 block mean",
+ "lines": 2533,
+ "samples": 2533,
+ "scale_m": 240.0,
+ "line_off": 1266.1666666666667,
+ "samp_off": 1266.1666666666667,
+ "units": "m relative to 1737.4 km sphere",
+ "dtype": "int16 LE",
+ "projection": "south polar stereographic, R=1737.4 km, MOON_ME (DE421)"
+}
