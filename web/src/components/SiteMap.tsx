@@ -1,6 +1,6 @@
 // Clickable south-pole map (80-90 S) coloured by NASA PGDA-69 average solar
 // illumination, with the candidate sites. Click to analyse any point.
-// Written with AI assistance (Claude, Anthropic) for Team Horvan.
+// Developed by Team Horvan, using Claude (Anthropic) as an AI coding assistant.
 import { useState } from 'react'
 import type { SiteIndex } from '../lib/data'
 import { latlonToXY, xyToLatLon } from '../lib/terrain'

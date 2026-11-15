@@ -98,7 +98,7 @@ python pipeline/build_sites.py          # LOLA â†’ 720-ray masks + validation â†
 
 ## AI disclosure
 
-Team Horvan used **Claude (Anthropic)**, an AI assistant, to help write the code (Python pipeline and React app) and to draft the documentation and slide text. Every number shown is computed by this code from the NASA datasets listed above. None were produced by an AI model. No NASA logos or branding are used. Horizon Line is not affiliated with or endorsed by NASA.
+Team Horvan used **Claude (Anthropic) as an AI coding assistant**, to help write and debug the Python data pipeline and the React web app. The team chose the method and data and checked the results: every number shown is computed by this code from the NASA datasets listed above, and none was produced by an AI model. No NASA logos or branding are used. Horizon Line is not affiliated with or endorsed by NASA.
 
 ## License
 

@@ -7,7 +7,7 @@
 * web/public/data/illum_map.png: PGDA Product 69 average solar illumination
   (Mazarico et al. 2011) over the same 80-90 S extent, for the clickable map.
 
-Code written with AI assistance (Claude, Anthropic) for Team Horvan.
+Developed by Team Horvan, using Claude (Anthropic) as an AI coding assistant.
 """
 from __future__ import annotations
 

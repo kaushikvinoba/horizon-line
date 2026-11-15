@@ -12,7 +12,7 @@ Conventions (match the LOLA PDS polar products, see raw/*.lbl):
     Sign verified: Mons Mouton & Mons Malapert sample ~+5 km, Shackleton/Haworth floors deep
     (IAU gazetteer coordinates, LDEM_80S_80M).
 
-Code written with AI assistance (Claude, Anthropic) for Team Horvan.
+Developed by Team Horvan, using Claude (Anthropic) as an AI coding assistant.
 """
 from __future__ import annotations
 

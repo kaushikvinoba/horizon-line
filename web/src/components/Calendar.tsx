@@ -1,7 +1,7 @@
 // Power & Comms Calendar: 30-day hourly strip. Each day row has 24 Sun cells
 // (amber, brightness = visible disc fraction) over 24 Earth cells (cyan = Earth
 // above terrain; bright = also a DSN complex sees the Moon >= 10 deg).
-// Written with AI assistance (Claude, Anthropic) for Team Horvan.
+// Developed by Team Horvan, using Claude (Anthropic) as an AI coding assistant.
 import type { Series } from '../lib/astro'
 import { fmtUTC, idxToDate } from '../lib/format'
 

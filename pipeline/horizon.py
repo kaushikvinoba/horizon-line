@@ -12,7 +12,7 @@ which already includes lunar curvature (no atmosphere, so no refraction).
 H[k] = max_d theta(d). Terrain comes from LDEM_80S_80M (80 m/px) where it
 covers, otherwise LDEM_75S_120M (120 m/px).
 
-Code written with AI assistance (Claude, Anthropic) for Team Horvan.
+Developed by Team Horvan, using Claude (Anthropic) as an AI coding assistant.
 """
 from __future__ import annotations
 

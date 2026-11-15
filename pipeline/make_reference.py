@@ -1,7 +1,7 @@
 """Python reference numbers for the browser-engine consistency test
 (web/tests/consistency.test.ts). Uses the same published data files.
 
-Code written with AI assistance (Claude, Anthropic) for Team Horvan.
+Developed by Team Horvan, using Claude (Anthropic) as an AI coding assistant.
 """
 import json
 import sys

@@ -1,6 +1,6 @@
 // Topocentric Sun/Earth geometry on the Moon + terrain visibility.
 // Mirrors pipeline/visibility.py exactly (validated against JPL Horizons to 0.001 deg).
-// Written with AI assistance (Claude, Anthropic) for Team Horvan.
+// Developed by Team Horvan, using Claude (Anthropic) as an AI coding assistant.
 import type { Ephem, Site } from './data'
 
 export const R0_KM = 1737.4

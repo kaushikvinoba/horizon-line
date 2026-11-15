@@ -1,6 +1,6 @@
 // Classroom Mode: plain-language view with a time slider, play button and
 // mast-height slider, built on the same real data as the planner views.
-// Written with AI assistance (Claude, Anthropic) for Team Horvan.
+// Developed by Team Horvan, using Claude (Anthropic) as an AI coding assistant.
 import { useEffect, useState } from 'react'
 import { HorizonRing } from '../components/HorizonRing'
 import { Panorama } from '../components/Panorama'

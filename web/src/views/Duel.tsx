@@ -1,5 +1,5 @@
 // Site Duel: two sites, identical date range, per-metric winners (no blended score).
-// Written with AI assistance (Claude, Anthropic) for Team Horvan.
+// Developed by Team Horvan, using Claude (Anthropic) as an AI coding assistant.
 import { HorizonRing } from '../components/HorizonRing'
 import type { Ephem, Site, SiteIndex } from '../lib/data'
 import { fmtDur, fmtUTC, idxToDate } from '../lib/format'

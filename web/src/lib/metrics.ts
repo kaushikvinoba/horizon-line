@@ -1,5 +1,5 @@
 // Aggregate metrics, transitions and the Window Finder scan.
-// Written with AI assistance (Claude, Anthropic) for Team Horvan.
+// Developed by Team Horvan, using Claude (Anthropic) as an AI coding assistant.
 import type { Series } from './astro'
 
 export interface Metrics {

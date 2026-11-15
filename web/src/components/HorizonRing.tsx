@@ -1,6 +1,6 @@
 // The Horizon Ring: plan view of the site's 360 deg terrain horizon (grey) with
 // Sun and Earth tracks. Radius encodes elevation angle; north is up, east right.
-// Written with AI assistance (Claude, Anthropic) for Team Horvan.
+// Developed by Team Horvan, using Claude (Anthropic) as an AI coding assistant.
 import { useMemo } from 'react'
 import type { Series } from '../lib/astro'
 

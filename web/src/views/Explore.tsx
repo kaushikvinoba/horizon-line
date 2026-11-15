@@ -1,5 +1,5 @@
 // Explore + Power & Comms Calendar for one site.
-// Written with AI assistance (Claude, Anthropic) for Team Horvan.
+// Developed by Team Horvan, using Claude (Anthropic) as an AI coding assistant.
 import { Calendar } from '../components/Calendar'
 import { HorizonRing } from '../components/HorizonRing'
 import { Panorama } from '../components/Panorama'

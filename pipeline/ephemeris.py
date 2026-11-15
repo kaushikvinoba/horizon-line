@@ -12,7 +12,7 @@ LOLA DEMs ("MEAN EARTH/POLAR AXIS OF DE421").
 Aberration: 'LT+S' (apparent direction as seen from the Moon). Topocentric
 vectors are formed in the browser / scoring step as target - site.
 
-Code written with AI assistance (Claude, Anthropic) for Team Horvan.
+Developed by Team Horvan, using Claude (Anthropic) as an AI coding assistant.
 """
 from __future__ import annotations
 

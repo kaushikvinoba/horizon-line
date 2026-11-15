@@ -2,7 +2,7 @@
 // NASA LOLA LDEM_80S_80M. Same geometry as pipeline/horizon.py (great-circle
 // rays, curvature-correct elevation angle). Quick estimate: compared with our
 // 80 m masks it is typically within ~0.2-1.3 deg RMS (see Methods).
-// Written with AI assistance (Claude, Anthropic) for Team Horvan.
+// Developed by Team Horvan, using Claude (Anthropic) as an AI coding assistant.
 import type { Site } from './data'
 
 const R0 = 1737400

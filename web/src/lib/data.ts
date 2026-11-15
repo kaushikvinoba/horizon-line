@@ -1,5 +1,5 @@
 // Data loading for Horizon Line. All data are precomputed from NASA sources by
-// the Python pipeline in /pipeline (see README). Written with AI assistance (Claude).
+// the Python pipeline in /pipeline (see README). Developed by Team Horvan, using Claude (Anthropic) as an AI coding assistant.
 
 export interface SiteIndex {
   site_id: string

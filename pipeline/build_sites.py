@@ -21,7 +21,7 @@ hourly timesteps over an 18.6-year span (2026-01-01 .. 2044-08-01) in which
 any part of the solar / Earth disc is above the terrain, and compares it with
 the PGDA 69 value at the same point. Same definition as the PGDA label.
 
-Code written with AI assistance (Claude, Anthropic) for Team Horvan.
+Developed by Team Horvan, using Claude (Anthropic) as an AI coding assistant.
 """
 from __future__ import annotations
 

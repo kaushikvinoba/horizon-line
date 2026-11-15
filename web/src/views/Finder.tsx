@@ -1,6 +1,6 @@
 // Window Finder: scan the hourly series of selected sites for date windows that
 // meet a mission rule, ranked transparently (coverage, then mean Sun disc).
-// Written with AI assistance (Claude, Anthropic) for Team Horvan.
+// Developed by Team Horvan, using Claude (Anthropic) as an AI coding assistant.
 import { useState } from 'react'
 import { computeSeries, maskFor } from '../lib/astro'
 import { loadSite, type Ephem, type SiteIndex } from '../lib/data'

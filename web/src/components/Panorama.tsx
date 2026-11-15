@@ -1,6 +1,6 @@
 // Panorama: unrolled 360 deg horizon (azimuth along x, elevation up) with the
 // Sun and Earth paths. The most direct way to see "is it above the ridge?".
-// Written with AI assistance (Claude, Anthropic) for Team Horvan.
+// Developed by Team Horvan, using Claude (Anthropic) as an AI coding assistant.
 import { useMemo, type ReactElement } from 'react'
 import type { Series } from '../lib/astro'
 

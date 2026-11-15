@@ -1,5 +1,5 @@
 // Horizon Line — Lunar Landing Site Navigator (Team Horvan, NASA Space Apps 2026).
-// Written with AI assistance (Claude, Anthropic).
+// Developed by Team Horvan, using Claude (Anthropic) as an AI coding assistant.
 import { useEffect, useRef, useState } from 'react'
 import { SiteMap } from './components/SiteMap'
 import { customSite } from './lib/terrain'
@@ -147,7 +147,7 @@ export default function App() {
       </main>
       <footer className="foot">
         Data: NASA LRO LOLA (PDS), NASA/JPL NAIF SPICE (DE440), JPL Horizons check, Mazarico et al. 2011 / PGDA 69. Geometric visibility only — not an operational planning product.
-        Team Horvan: Kaushik Vinoba (Team Lead), Ram Naren, S. Vijeta, Samuel M, Rishika M N. Not affiliated with or endorsed by NASA. Built with AI assistance (Claude, Anthropic). <a href="https://github.com/kaushikvinoba/horizon-line" target="_blank" rel="noreferrer">Source on GitHub</a>
+        Team Horvan: Kaushik Vinoba (Team Lead), Ram Naren, S. Vijeta, Samuel M, Rishika M N. Not affiliated with or endorsed by NASA. Code written with Claude (Anthropic) as an AI coding assistant. <a href="https://github.com/kaushikvinoba/horizon-line" target="_blank" rel="noreferrer">Source on GitHub</a>
       </footer>
     </div>
   )

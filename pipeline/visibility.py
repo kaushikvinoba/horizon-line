@@ -11,7 +11,7 @@ straight horizon is
     f = 1                              u >= +1
     f = 0.5 + (u sqrt(1-u^2) + asin u)/pi   otherwise.
 
-Code written with AI assistance (Claude, Anthropic) for Team Horvan.
+Developed by Team Horvan, using Claude (Anthropic) as an AI coding assistant.
 """
 from __future__ import annotations
 
