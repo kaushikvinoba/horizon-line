@@ -43,6 +43,9 @@ export function Methods({ index }: { index: SiteIndex[] }) {
             })}
           </tbody>
         </table>
+        <h3>3 · Resolution sensitivity</h3>
+        <p><b>Custom points (240 m terrain, computed in the browser):</b> versus our 80 m masks at the nine candidate points the horizon differs by 0.2–1.3° RMS and the 18.6-yr sunlit % by −2 to +3 points at seven sites, +2 at Cabeus B (some rays leave the 80°S grid) and +19 at Malapert's sharp summit — treat custom-point results on peaks as optimistic.</p>
+        <p><b>Finer terrain (LOLA 20 m, 85°S–90°S):</b> re-running six southern points with a 20 m near field at mast 0 lowered sunlit % by 1–22 points (e.g. Mons Mouton 77→55%). Slopes within ~100 m of the exact spot matter a lot at mast 0 — the exact placement of a lander or solar mast inside a region is decisive. We keep 80 m for the candidate sites because it is the like-for-like comparison with the 120 m NASA map.</p>
         <p className="caption">Differences come from DEM resolution (80 m vs the higher-resolution terrain used by PGDA), different time spans (PGDA averages a different 18.6-yr epoch), point vs 120 m pixel sampling, and Earth criterion details. We do not claim NASA validation or endorsement — these are our own comparisons with public NASA products.</p>
       </section>
 

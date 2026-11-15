@@ -1,13 +1,14 @@
 // Site Duel: two sites, identical date range, per-metric winners (no blended score).
 // Written with AI assistance (Claude, Anthropic) for Team Horvan.
 import { HorizonRing } from '../components/HorizonRing'
-import type { Ephem, SiteIndex } from '../lib/data'
+import type { Ephem, Site, SiteIndex } from '../lib/data'
 import { fmtDur, fmtUTC, idxToDate } from '../lib/format'
 import { metrics, type Metrics } from '../lib/metrics'
 import { useSeries, useSite } from '../lib/useData'
 
 interface Props {
   index: SiteIndex[]
+  custom: Site | null
   ephem: Ephem
   a: string
   b: string
@@ -31,16 +32,16 @@ const ROWS: Row[] = [
   { key: 'longestNoEarth', label: 'Longest Earth outage', better: 'low', fmt: (m) => fmtDur(m.longestNoEarth) },
 ]
 
-export function Duel({ index, ephem, a, b, setA, setB, mast, start, days, setDays, cursor }: Props) {
-  const sa = useSite(a)
-  const sb = useSite(b)
+export function Duel({ index, custom, ephem, a, b, setA, setB, mast, start, days, setDays, cursor }: Props) {
+  const sa = useSite(a, custom)
+  const sb = useSite(b, custom)
   const A = useSeries(sa, ephem, mast)
   const B = useSeries(sb, ephem, mast)
   const st = Math.max(0, Math.min(ephem.count - days * 24, start - (start % 24)))
   const en = st + days * 24
   const ma = A ? metrics(A.series, st, en) : null
   const mb = B ? metrics(B.series, st, en) : null
-  const opts = index.map((s) => <option key={s.site_id} value={s.site_id}>{s.region_name.replace(' (Artemis III candidate region)', '')}</option>)
+  const opts = [...index, ...(custom ? [custom] : [])].map((s) => <option key={s.site_id} value={s.site_id}>{s.region_name.replace(' (Artemis III candidate region)', '')}</option>)
   const wins = { a: 0, b: 0 }
 
   return (

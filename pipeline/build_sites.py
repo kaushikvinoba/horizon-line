@@ -90,7 +90,7 @@ def pick_point(illum, anchor, r_km, taken, min_sep_km=10.0, outward=False):
     n = int(np.ceil(rmax / illum.scale)) + 2
     l0, l1 = int(l_c) - n, int(l_c) + n
     s0, s1 = int(s_c) - n, int(s_c) + n
-    win = np.asarray(illum.data[l0:l1, s0:s1], dtype=np.float64)
+    win = illum.values(illum.data[l0:l1, s0:s1])
     # 3x3 mean to avoid single-pixel artefacts
     pad = np.pad(win, 1, mode="edge")
     sm = sum(pad[i:i + win.shape[0], j:j + win.shape[1]] for i in range(3) for j in range(3)) / 9

@@ -66,7 +66,7 @@ export function Explore({ site, ephem, H, series, cursor, setCursor, mast, calSt
             <dt>Azimuth</dt><dd>{series.earthAz[k].toFixed(1)}° {compass(series.earthAz[k])}</dd>
             <dt>Terrain there</dt><dd>{fmtDeg(series.earthHz[k])}</dd>
             <dt>{earthVis ? 'Earthset in' : 'Earthrise in'}</dt><dd className="em">{fmtDur(toEarth)}</dd>
-            <dt>DSN complexes up</dt>
+            <dt>DSN sees Moon ≥10°</dt>
             <dd>{dsnNow.length ? dsnNow.map((d) => <span key={d.short} className="badge">{d.antenna} {d.complex}</span>) : <span className="muted">none ≥10°</span>}</dd>
           </dl>
         </div>
@@ -136,7 +136,7 @@ function SiteFacts({ site }: { site: Site }) {
         <dt>How chosen</dt><dd>{site.selection.method}. Anchor: {site.selection.anchor_source}.</dd>
         <dt>Status</dt><dd className="warn-t">{site.selection.note}</dd>
         <dt>Terrain</dt><dd>{site.dem_source}. {site.pixel_scale_warning}</dd>
-        <dt>Check vs NASA map</dt><dd>18.6-yr sunlit: ours {v.ours_sun_pct.toFixed(1)}% vs PGDA {v.pgda69_sun_pct.toFixed(1)}% · Earth: ours {v.ours_earth_pct.toFixed(1)}% vs PGDA {v.pgda69_earth_pct?.toFixed(1)}%</dd>
+        <dt>Check vs NASA map</dt><dd>{isFinite(v.ours_sun_pct) ? <>18.6-yr sunlit: ours {v.ours_sun_pct.toFixed(1)}% vs PGDA {v.pgda69_sun_pct.toFixed(1)}% · Earth: ours {v.ours_earth_pct.toFixed(1)}% vs PGDA {v.pgda69_earth_pct?.toFixed(1)}%</> : 'Not validated individually (custom point) — see Methods for typical 240 m accuracy.'}</dd>
       </dl>
     </section>
   )

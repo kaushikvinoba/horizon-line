@@ -2,14 +2,16 @@ import { useEffect, useMemo, useState } from 'react'
 import { computeSeries, maskFor, type Series } from './astro'
 import { loadSite, type Ephem, type Site } from './data'
 
-export function useSite(id: string | null): Site | null {
+export function useSite(id: string | null, custom?: Site | null): Site | null {
   const [site, setSite] = useState<Site | null>(null)
+  const isCustom = !!id && id.startsWith('custom_')
   useEffect(() => {
     let live = true
-    if (!id) { setSite(null); return }
+    if (!id || isCustom) { setSite(null); return }
     loadSite(id).then((s) => live && setSite(s))
     return () => { live = false }
-  }, [id])
+  }, [id, isCustom])
+  if (isCustom) return custom && custom.site_id === id ? custom : null
   return site && site.site_id === id ? site : null
 }
 

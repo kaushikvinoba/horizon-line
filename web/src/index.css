@@ -196,3 +196,20 @@ dd.em { color: var(--text); font-weight: 600; }
 
 .foot { color: var(--muted); font-size: 0.75rem; margin-top: 22px; border-top: 1px solid var(--line); padding-top: 10px; }
 .class-grid .pano { height: 340px; }
+.map-wrap { display: grid; grid-template-columns: minmax(300px, 640px) 1fr; gap: 18px; align-items: start; }
+@media (max-width: 900px) { .map-wrap { grid-template-columns: 1fr; } }
+.map { width: 100%; height: auto; display: block; cursor: crosshair; border-radius: 50%; }
+.map-grid { fill: none; stroke: rgba(150, 170, 210, 0.25); stroke-width: 0.6; }
+.map-lbl { fill: var(--muted); font-size: 11px; font-family: var(--mono); }
+.map-dot { fill: var(--earth); stroke: #fff; stroke-width: 1.2; cursor: pointer; }
+.map-dot.ref { fill: var(--b); }
+.map-dot.on { fill: var(--sun); }
+.map-dot.custom { fill: var(--dsn); }
+.map-name { fill: #fff; font-size: 11px; paint-order: stroke; stroke: rgba(0, 0, 0, 0.75); stroke-width: 3px; pointer-events: none; }
+.map-site:hover .map-dot { r: 8; }
+.map-scale { display: flex; align-items: center; gap: 8px; font-size: 0.75rem; color: var(--muted); }
+.map-scale i { flex: 1; height: 10px; border-radius: 3px; background: linear-gradient(90deg, #060912, #161e34 15%, #46505f 40%, #aa8c50 65%, #ffc45a); }
+.mono { font-family: var(--mono); font-size: 0.85rem; }
+.coord-form { display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-end; margin: 8px 0; }
+.coord-form label { display: flex; flex-direction: column; gap: 3px; font-size: 0.75rem; color: var(--muted); }
+.coord-form input { background: var(--bg2); border: 1px solid var(--line2); border-radius: 7px; padding: 6px 8px; width: 140px; }

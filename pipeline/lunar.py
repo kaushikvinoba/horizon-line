@@ -29,10 +29,15 @@ R0 = 1_737_400.0  # m
 @dataclass
 class PolarGrid:
     name: str
-    data: np.ndarray  # float32 heights (m) or values, shape (lines, samples)
+    data: np.ndarray  # raw int16 (memmap), shape (lines, samples); value = data * k + add
     scale: float      # m / pixel
     line_off: float
     samp_off: float
+    k: float = 1.0
+    add: float = 0.0
+
+    def values(self, a):
+        return np.asarray(a, dtype=np.float64) * self.k + self.add
 
     @property
     def half_extent_m(self) -> float:
@@ -69,12 +74,10 @@ def load_pds_img(img_path: str | Path, mmap: bool = True) -> PolarGrid:
     samp_off = _num(_lbl_value(text, "SAMPLE_PROJECTION_OFFSET"))
     raw = np.memmap(img_path, dtype="<i2", mode="r", shape=(lines, samples)) if mmap \
         else np.fromfile(img_path, dtype="<i2").reshape(lines, samples)
-    data = raw.astype(np.float32) * scale_factor
     # For DEMs OFFSET is the reference radius (1737.4 km); we keep heights
     # relative to R0. For non-DEM products OFFSET is added (usually 0).
-    if offset < 1e5:
-        data = data + offset
-    return PolarGrid(img_path.stem, data, map_scale, line_off, samp_off)
+    add = offset if offset < 1e5 else 0.0
+    return PolarGrid(img_path.stem, raw, map_scale, line_off, samp_off, scale_factor, add)
 
 
 def latlon_to_xy(lat_deg, lon_deg):
@@ -113,7 +116,7 @@ def bilinear(grid: PolarGrid, line, samp):
     d = grid.data
     v = (d[l0o, s0o] * (1 - fl) * (1 - fs) + d[l0o + 1, s0o] * fl * (1 - fs)
          + d[l0o, s0o + 1] * (1 - fl) * fs + d[l0o + 1, s0o + 1] * fl * fs)
-    out[ok] = v
+    out[ok] = v * grid.k + grid.add
     return out
 
 
